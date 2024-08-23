@@ -1,0 +1,142 @@
+.hero {
+    background-color: #DBE1C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url("../../assets/hero2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1045px 565px;
+    position: relative;
+}
+.hero__container {
+    height: 645px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__title {
+    font-family: 'Roboto Condensed';
+    font-size: 42px;
+    font-weight: 400;
+    color: #2d6362;
+    text-align: start;
+    margin: 0;
+
+}
+.hero__subtitle {
+    font-family: 'Roboto Condensed';
+    font-size: 34px;
+    font-weight: 300;
+    color: #2d6362;
+    margin: 26px 0 0;
+}
+.hero__button {
+    width: 170px;
+    height: 50px;
+    background-color: #2d6362;
+    border: none;
+    border-radius: 3px;
+    margin: 0 150px 50px 0;
+}
+.hero__link {
+    text-decoration: none;
+    color: #fff;
+}
+.hero__button:hover {
+    cursor: pointer;
+    background-color: #23443f;
+}
+.hero__dash {
+    width: 6px;
+    height: 50px;
+    position: absolute;
+}
+.hero__dash_a {
+    top: 20px;
+    right: 600px;
+    background-color: #4B6859;
+    animation: down 1s linear forwards;
+}
+.hero__dash_b {
+    top: 220px;
+    right: 550px;
+    background-color: #6c2b18;;
+    animation: down 1s 0.3 linear forwards;
+}
+.hero__dash_c {
+    top: 120px;
+    right: 500px;
+    background-color: #999186;
+    animation: down 1s linear forwards;
+}
+.hero__dash_d {
+    top: 310px;
+    right: 400px;
+    background-color: #df962c;
+    animation: down 1s 0.4 linear forwards;
+}
+.hero__dash_e {
+    top: 10px;
+    left: 600px;
+    background-color: #df962c;
+    animation: down 1s linear forwards;
+}
+.hero__dash_f {
+    top: 275px;
+    left: 130px;
+    background-color: #df962c;
+    animation: heightAnimation 2s 0.3 linear forwards;
+}
+.hero__dash_g {
+    top: 100px;
+    left: 470px;
+    background-color: #6c2b18;
+    animation: down 1s linear forwards;
+}
+.hero__dash_h {
+    top: 390px;
+    left: 130px;
+    background-color: #df962c;
+    width: 50px;
+    height: 6px;
+    animation: widthAnimation 3s 0.3 linear forwards;
+}
+@keyframes down {
+    100% {
+        transform: translateY(70px);
+    }
+}
+@keyframes heightAnimation {
+    from {
+        height: 50px;
+    }
+    to {
+        height: 200px;
+    }
+}
+@keyframes widthAnimation {
+    from {
+        width: 50px;
+    }
+    to {
+        width: 500px;
+    }
+    
+}
+
+@media (max-width: 1350px) {
+    .hero__container {
+        padding-left: 50px;
+    }
+    .hero__button {
+        margin-right: 50px;
+    }
+    .hero__dash_f {
+        left: 35px;
+    }
+    .hero__dash_h {
+        left: 35px;
+    }
+}

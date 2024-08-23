@@ -1,0 +1,18 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+.section-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 26px;
+  margin: 20px 0;
+  line-height: 2;
+}

@@ -1,0 +1,74 @@
+.projects {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.projects__list-item {
+    list-style: none;
+    width: 600px;
+    height: 500px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__list-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.projects__title {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 25px 0;
+}
+
+.projects__date {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 25px 0;
+}
+
+.projects__video {
+    border-top: 7px solid #df962c;
+}
+
+.projects__list-item-footer {
+    background-color: #df962c;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #df962c;
+    border-radius: 20px;
+    align-self: flex-end;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.projects__list-item-footer:hover {
+    background-color: #81591d;
+    border-color: #81591d;
+}
+
+.projects__list-item-footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.projects__list-item-footer:hover a {
+    color: #f3f3f3;
+}

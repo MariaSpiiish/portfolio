@@ -1,0 +1,134 @@
+.about {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    justify-content: space-between;
+    align-items: center;
+    height: 545px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.about__img {
+    width: 100%; 
+    height: auto;
+}
+
+.about__img-wrapper {
+    position: absolute; 
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.about__circle {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    animation: rotateText 6s ease-out forwards 0.5;
+}
+
+@keyframes rotateText
+{
+    100%
+    {
+        transform: rotate(170deg);
+    }
+}
+
+.about__text-cont span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 18px;
+    font-weight: 400;
+    transform-origin: 0 180px;
+
+}
+
+.about__circle:hover {
+    cursor: pointer;
+}
+
+.about__stack-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    width: 300px;
+    gap: 20px;
+}
+
+.about__stack, .about__exp {
+    align-self: flex-start;
+}
+
+.about__stack .about__title {
+    margin-bottom: 18px;
+}
+
+.about__stack-list:last-child {
+    grid-column: span 2;
+}
+
+.about__title {
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.about__stack-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about__stack-list:nth-child(1) {
+    background-color: #dbe1c4;
+}
+.about__stack-list:nth-child(2) {
+    background-color: #df962c;
+}
+.about__stack-list:nth-child(3) {
+    background-color: #798c74;
+}
+
+.about__exp {
+    max-width: 400px;
+    text-align: left;
+}
+
+.about__exp-text {
+    border-left: 5px solid #6c2b18;;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 1350px) {
+    .about {
+        margin: 50px;
+    }
+}
