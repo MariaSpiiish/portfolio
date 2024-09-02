@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { about, stack } from '../../utils/constants';
+import { Link } from "react-router-dom";
 
 function About() {
   
@@ -60,7 +61,7 @@ function About() {
           <h3 className="about__title">Стек</h3>
           <div className="about__stack-container">
             <ul className="about__stack-list">
-            {stack.frontend.map((item, i) => <li key={i} className="about__stack-list-item">{item}</li>)}
+              {stack.frontend.map((item, i) => <li key={i} className="about__stack-list-item">{item}</li>)}
             </ul>
             <ul className="about__stack-list">
               {stack.backend.map((item, i) => <li key={i} className="about__stack-list-item">{item}</li>)}
@@ -69,11 +70,15 @@ function About() {
               {stack.techs.map((item, i) => <li key={i} className="about__stack-list-item">{item}</li>)}
             </ul>
           </div>
+          <button className="about__stack-button">
+            <Link to="/qualifications" className="about__stack-link">Курсы и сертификаты</Link>
+          </button>
+          
         </div>
         
         <div className="about__exp">
           <h3 className="about__title">Опыт</h3>
-          <p className="about__exp-text">Филолог по образованию и повелитель нулей и единиц в душе, в 2022 году я окончила курсы ЯндексПрактикум по направлению веб-разработки.</p>
+          <p className="about__exp-text">Филолог по образованию и повелитель нулей и единиц в душе, в 2022 году я окончила курсы ЯндексПрактикум по направлению веб-разработки. В 2024 окончила курс CS50 от Harward University на ed.x.</p>
           <p className="about__exp-text">Проходила практику в "Фастдев" на протяжении полугода в начале 2023, где с DevOps командой разработала фронтенд часть SPA на React для HR компании, которое представляет собой таблицу сводных данных о занятости сотрудников компании с возможностью фильтрации и поиска.</p>
           <p className="about__exp-text">На данный момент являюсь стажером в NjuiceAB, занимаюсь поддержкой фронтенд части внутреннего приложения и разработкой нового функционала.
           </p>

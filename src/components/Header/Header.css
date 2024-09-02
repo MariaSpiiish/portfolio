@@ -1,12 +1,19 @@
 .header {
     height: 60px;
     background-color: #2d6362;
-    /* background-color: #798c74; */
     display: flex;
+}
+
+.header_home {
     gap: 50px;
     justify-content: flex-end;
     align-items: center;
 }
+
+.header_qual {
+    padding-left: 10%;
+}
+
 .header__button {
     width: 170px;
     height: inherit;
@@ -26,6 +33,8 @@
     background-color:  #23443f;
 }
 
-/* .header__button:hover .header__link {
-    color:#2d6362;
-} */
+.header__home {
+    font-size: 30px;
+    color: #fff;
+
+}

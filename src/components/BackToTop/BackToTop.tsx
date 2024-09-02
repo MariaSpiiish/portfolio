@@ -3,7 +3,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 function BackToTop() {
     
-    const scrollToTop = () => {
+    const scrollToTop = (event: React.MouseEvent<HTMLButtonElement> | React.MouseEvent<SVGSVGElement>) => {
+      event.preventDefault();
         window.scrollTo({
         top: 0,
         behavior: 'smooth'

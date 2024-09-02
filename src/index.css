@@ -8,6 +8,9 @@
 @import url('./components/Projects/Projects.css');
 @import url('./components/Contacts/Contacts.css');
 @import url('./components/Footer/Footer.css');
+@import url('./components/Qualifications/Qualifications.css');
+@import url('./components/Slider/Slider.css');
+@import url('./components/ImagePopup/ImagePopup.css');
 
 :root {
   font-family: 'Roboto', 'Roboto Condensed';

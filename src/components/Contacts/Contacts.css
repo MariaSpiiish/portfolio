@@ -39,3 +39,7 @@
 .contacts__link {
     text-decoration: none;
 }
+
+.contacts__link:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,13 @@
+.qual {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #f3f3f3;
+  }
+  
+.qual__carousel {
+    width: 800px; 
+    height: 500px;
+}

@@ -67,3 +67,9 @@ export const contactsData: ContactsData = [
         },
 ]
 
+const yandex = new URL(`../assets/yandex.jpg`, import.meta.url).href;
+const ielts = new URL(`../assets/ielts.jpg`, import.meta.url).href;
+const cs50 = new URL(`../assets/CS50x.png`, import.meta.url).href;
+
+export const slides = [cs50, yandex, ielts];
+
