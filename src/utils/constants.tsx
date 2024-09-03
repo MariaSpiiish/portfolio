@@ -18,7 +18,7 @@ type VideoData = {
 
 export const videoData: VideoData = [
         {
-               title: "Let's Talk",
+               title: "Let's Talk - приложение для практики английского",
                date: "07/2024",
                url: new URL(`../assets/videos/lets-talk.mp4`, import.meta.url).href,
                link: "https://mariaspiiish.github.io/lets-talk"
@@ -30,10 +30,9 @@ export const videoData: VideoData = [
                 link: "https://mariaspiiish.github.io/landing/"
         },
         {
-                title: "Лендинг",
-                date: "06/2024",
-                url: new URL(`../assets/videos/landing.mp4`, import.meta.url).href,
-                link: "https://mariaspiiish.github.io/landing/"
+                title: "Fastnotify - сводная таблица для RM компании",
+                date: "03/2023",
+                url: new URL(`../assets/videos/fastnotify.mp4`, import.meta.url).href,
         },
         {
                 title: "Дипломный проект ЯндексПрактикум",
