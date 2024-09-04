@@ -1,17 +1,25 @@
+import { useState } from "react";
+import ImagePopup from "../ImagePopup/ImagePopup";
 import Slider from "../Slider/Slider";
 
-type PropsType = {
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>,
-  setImg: React.Dispatch<React.SetStateAction<string>>
-}
+function Qualifications() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [img, setImg] = useState('');
 
-function Qualifications({ setIsOpen, setImg }: PropsType) {
+  const close = (): void => {
+    setIsOpen(false);
+  }
+
   return (
-    <main className="qual">
-      <div className="qual__carousel">
-        <Slider setIsOpen={setIsOpen} setImg={setImg}/>  
-      </div>
-    </main>
+    <>
+      <main className="qual">
+        <div className="qual__carousel">
+          <Slider setIsOpen={setIsOpen} setImg={setImg}/>  
+        </div>
+      </main>
+      <ImagePopup img={img} onClose={close} isOpen={isOpen}/>
+    </>
+    
   )
 }
 
