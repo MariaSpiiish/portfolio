@@ -1,5 +1,5 @@
 import { HomeOutlined } from "@ant-design/icons";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
@@ -16,9 +16,10 @@ function Header() {
       {
         (location.pathname === '/') ? (
           <>
-            <button className="header__button"><a href='#about' className="header__link">Обо мне</a></button>
-            <button className="header__button"><a href='#projects' className="header__link">Проекты</a></button>
-            <button className="header__button"><a href='#contacts' className="header__link">Контакты</a></button>
+            <a href='#about' className="header__button">Обо мне</a>
+            <a href='#projects' className="header__button">Проекты</a>
+            <a href='#contacts' className="header__button">Контакты</a>
+            <Link to="/qualifications" className="header__button">Курсы и сертификаты</Link>
           </>
         ) : (
           <HomeOutlined onClick={handleClick} className="header__home"/>
