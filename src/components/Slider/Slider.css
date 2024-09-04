@@ -34,3 +34,9 @@
 .slider__arrow_left {
     left: 30px;
 }
+
+.slider__spin {
+    position:absolute;
+    top: 48%;
+    right: 47%;
+}

@@ -1,6 +1,7 @@
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react"
 import { slides } from '../../utils/constants'
+import { ConfigProvider, Spin } from "antd";
 
 type PropsType = {
     setIsOpen: React.Dispatch<React.SetStateAction<boolean>>,
@@ -63,8 +64,25 @@ function Slider({ setIsOpen, setImg }: PropsType) {
     <div className="slider">
         <RightOutlined className="slider__arrow slider__arrow_right" onClick={goToNext}/>
         <LeftOutlined className="slider__arrow slider__arrow_left" onClick={goToPrev}/>
-        <div className="slider__slide" style={{backgroundImage: `url(${slides[currentIndex]})`}} onClick={handleClick}></div>
-        {loading && <div className="slider__loading">Loading...</div>}
+        <div className="slider__slide"
+          style={{
+            backgroundImage: loading ? 'none' : `url(${slides[currentIndex]})`,
+          }} 
+          onClick={handleClick}
+        ></div>
+        {loading && (
+          <ConfigProvider
+            theme={{
+              components: {
+                Spin: {
+                  colorPrimary: '#2d6362'
+                }
+              }
+            }}
+          >
+            <Spin size="large" className="slider__spin"/>
+          </ConfigProvider>
+        )}
     </div>
   )
 }
