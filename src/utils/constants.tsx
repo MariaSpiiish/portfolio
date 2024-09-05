@@ -19,7 +19,7 @@ type VideoData = {
 export const videoData: VideoData = [
         {
                title: "Let's Talk - приложение для практики английского",
-               date: "07/2024",
+               date: "08/2024",
                url: new URL(`../assets/videos/lets-talk.mp4`, import.meta.url).href,
                link: "https://mariaspiiish.github.io/lets-talk"
         },
@@ -30,8 +30,8 @@ export const videoData: VideoData = [
                 link: "https://mariaspiiish.github.io/landing/"
         },
         {
-                title: "Fastnotify - сводная таблица для RM компании",
-                date: "03/2023",
+                title: "Fastnotify",
+                date: "02/2023 - 08/2023",
                 url: new URL(`../assets/videos/fastnotify.mp4`, import.meta.url).href,
         },
         {
@@ -69,6 +69,7 @@ export const contactsData: ContactsData = [
 const yandex = new URL(`../assets/yandex.jpg`, import.meta.url).href;
 const ielts = new URL(`../assets/ielts.jpg`, import.meta.url).href;
 const cs50 = new URL(`../assets/CS50x.png`, import.meta.url).href;
+const college = new URL(`../assets/education.jpg`, import.meta.url).href;
 
-export const slides = [cs50, yandex, ielts];
+export const slides = [cs50, yandex, college, ielts];
 

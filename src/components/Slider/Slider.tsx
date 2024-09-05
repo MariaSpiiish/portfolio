@@ -9,16 +9,8 @@ type PropsType = {
 }
 
 function Slider({ setIsOpen, setImg }: PropsType) {
-  const [currentIndex, setCurrentIndex] = useState<number>(() => {
-      const savedIndex = localStorage.getItem('slider-current-index');
-      return savedIndex ? parseInt(savedIndex, 10) : 0;
-  });
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-      // Save the currentIndex to local storage whenever it changes
-      localStorage.setItem('slider-current-index', currentIndex.toString());
-  }, [currentIndex]);
     
   useEffect(() => {
     let loadedImages = 0;

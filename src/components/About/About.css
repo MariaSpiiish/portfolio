@@ -128,7 +128,8 @@
 }
 
 .about__stack-button {
-    height: 60px;
+    display: block;
+    height: 50px;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -136,14 +137,12 @@
     width: 100%;
     margin-top: 20px;
     background-color: #2d6362d4;
-}
-
-.about__stack-link {
     text-decoration: none;
     color: #000;
+    padding-top: 25px;
 }
 
-.about__stack-button:hover, .about__stack-button:hover .about__stack-link {
+.about__stack-button:hover {
     cursor: pointer;
     background-color: #23443f;
     color: #fff;
