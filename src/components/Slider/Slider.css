@@ -14,7 +14,10 @@
     height: 95%; 
     border-radius: 10px;
     transition: background-image 0.5s ease-in-out;
-    
+}
+
+.slider__slide:hover {
+    cursor: pointer;
 }
 
 .slider__arrow {
@@ -28,11 +31,11 @@
 }
 
 .slider__arrow_right {
-    right: 30px;
+    right: -30px;
 }
 
 .slider__arrow_left {
-    left: 30px;
+    left: -30px;
 }
 
 .slider__spin {

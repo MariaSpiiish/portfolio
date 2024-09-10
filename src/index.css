@@ -11,6 +11,9 @@
 @import url('./components/Qualifications/Qualifications.css');
 @import url('./components/Slider/Slider.css');
 @import url('./components/ImagePopup/ImagePopup.css');
+@import url('./components/Popup/Popup.css');
+@import url('./components/ProjectPopup/ProjectPopup.css');
+@import url('./components/VideoPopup/VideoPopup.css');
 
 :root {
   font-family: 'Roboto', 'Roboto Condensed';

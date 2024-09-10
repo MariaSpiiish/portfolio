@@ -1,0 +1,22 @@
+.popup__project-container {
+    width: 45vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.popup__project-header {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 6px solid #df962c;
+    padding-bottom: 10px;
+}
+
+.popup__project-p {
+    font-size: 18px;
+    font-weight: 400;
+}
