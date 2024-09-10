@@ -9,7 +9,7 @@ type PropsType = {
 const VideoPopup = ({ video, setIsVideoOpen, isVideoOpen }: PropsType) => {    
     return (
         <Popup setIsOpen={setIsVideoOpen} isOpen={isVideoOpen}>
-          <video src={video} autoPlay={true} loop muted className="popup__video">Your browser does not support the video tag.</video>
+          <video src={video} loop muted controls className="popup__video">Your browser does not support the video tag.</video>
         </Popup>
     ) 
 }

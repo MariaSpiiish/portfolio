@@ -12,6 +12,29 @@ function About() {
 
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [hovering, setHovering] = useState(false);
+  const [loading, setLoading] = useState<boolean>(true);
+    
+  useEffect(() => {
+    let loadedImages = 0;
+    const totalImages = images.length;
+  
+    const handleImageLoad = () => {
+      loadedImages += 1;
+      if (loadedImages === totalImages) {
+        setLoading(false);
+      }
+    };
+  
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+      img.onload = handleImageLoad;
+    });
+  
+    return () => {
+      setLoading(true);
+    };
+  }, []);
 
   useEffect(() => {
     let timer: number;
@@ -22,14 +45,14 @@ function About() {
         index += 1;
         if (index < images.length) {
           setCurrentImage(images[index]);
-          timer = setTimeout(changeImage, 500); // Change image every 1 second
+          timer = setTimeout(changeImage, 500);
         } else {
-          setCurrentImage(images[0]); // Reset to the initial image
+          setCurrentImage(images[0]);
         }
       };
-      timer = setTimeout(changeImage, 200); // Start the sequence
+      timer = setTimeout(changeImage, 200);
     }
-    return () => clearTimeout(timer); // Cleanup timeout on hover end or unmount
+    return () => clearTimeout(timer);
   }, [hovering]);
 
   const handleMouseEnter = () => {
@@ -47,8 +70,23 @@ function About() {
       <div className="about__content">
         <div className="about__circle">
           <div className="about__img-wrapper">
-              <img src={currentImage} alt="meet mariia" className="about__img" style={{marginTop: '-90px'}}onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}/>
+              {loading ? (
+                <img
+                  src={explorer}
+                  alt="meet mariia"
+                  className="about__img"
+                  style={{marginTop: '-90px'}}
+                />
+              ) : (
+                <img 
+                  src={currentImage}
+                  alt="meet mariia"
+                  className="about__img"
+                  style={{marginTop: '-90px'}}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                />
+              )}
           </div>
           <div className="about__text-cont">
               <p className="about__text">{about.split('').map((char, i) => (
