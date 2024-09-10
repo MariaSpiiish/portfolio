@@ -225,6 +225,7 @@
 @media (max-width: 750px) {
     .hero__container {
         height: 400px;
+        padding-left: 10%;
     }
     .hero__dash_f {
         top: 150px;
@@ -234,5 +235,11 @@
     }
     .hero__subtitle {
         font-size: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero__dash_f {
+        left: 5%;
     }
 }

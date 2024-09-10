@@ -11,3 +11,10 @@
     width: 800px; 
     height: 500px;
 }
+
+@media (max-width: 900px) {
+  .qual__carousel {
+      width: 85vw;
+      height: 85vh;
+  }
+}

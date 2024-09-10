@@ -20,3 +20,10 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+@media (max-width: 750px) {
+    .popup__project-container {
+        width: 82vw;
+        height: 80vh;
+    }
+}

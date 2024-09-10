@@ -2,3 +2,10 @@
     max-width: 85vw;
     max-height: 85vh;
 }
+
+@media (max-width: 600px) {
+    .popup__image {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+}
