@@ -75,14 +75,12 @@ function About() {
                   src={explorer}
                   alt="meet mariia"
                   className="about__img"
-                  style={{marginTop: '-90px'}}
                 />
               ) : (
                 <img 
                   src={currentImage}
                   alt="meet mariia"
                   className="about__img"
-                  style={{marginTop: '-90px'}}
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 />
@@ -115,8 +113,8 @@ function About() {
         <div className="about__exp">
           <h3 className="about__title">Опыт</h3>
           <p className="about__exp-text">Филолог по высшему образованию и повелитель нулей и единиц в душе, в 2022 году я окончила курсы ЯндексПрактикум по направлению веб-разработки. В 2024 окончила курс CS50 от Harward University на ed.x.</p>
-          <p className="about__exp-text">Проходила практику в "Фастдев AB" на протяжении полугода в начале 2023, где с DevOps командой разработала фронтенд часть SPA на React для HR И RM команд, которое представляет собой таблицу сводных данных о занятости сотрудников компании с возможностью фильтрации и поиска.</p>
-          <p className="about__exp-text">На данный момент работаю фриланс в NjuiceAB, занимаюсь поддержкой фронтенд части внутреннего приложения и разработкой нового функционала.
+          <p className="about__exp-text">Проходила практику в "Fastdev AB" на протяжении полугода в начале 2023, где с DevOps командой разработала фронтенд часть SPA на React для HR И RM команд, которое представляет собой таблицу сводных данных о занятости сотрудников компании с возможностью фильтрации и поиска.</p>
+          <p className="about__exp-text">На данный момент работаю фриланс в Njuice AB, занимаюсь поддержкой фронтенд части внутреннего приложения и разработкой нового функционала.
           </p>
         </div>
       </div>

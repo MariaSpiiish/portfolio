@@ -42,3 +42,16 @@
         width: 380px;
     }
 }
+
+@media (max-width: 500px) {
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .footer__copyright {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+}

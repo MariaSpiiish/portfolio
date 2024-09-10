@@ -42,3 +42,15 @@
     color: #fff;
 
 }
+
+@media (max-width: 750px) {
+    .header {
+        padding: 0 5px;
+    }
+    .header__button:last-child {
+        margin-right: 0;
+    }
+    .header_home {
+        gap: 20px;
+    }
+}

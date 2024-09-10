@@ -5,7 +5,7 @@
     width: 1280px;
     justify-content: space-between;
     align-items: center;
-    height: 545px;
+    /* height: 545px; */
 }
 
 .about__content {
@@ -18,6 +18,7 @@
 .about__img {
     width: 100%; 
     height: auto;
+    margin-top: -90px;
 }
 
 .about__img-wrapper {
@@ -150,6 +151,102 @@
 
 @media (max-width: 1350px) {
     .about {
-        margin: 50px;
+        width: 1080px;
+    }
+    .about__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .about__exp {
+        grid-column: span 2;
+        max-width: 600px;
+    }
+    .about__stack-button {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about {
+        width: 780px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .about {
+        width: 680px;
+    }
+    .about__content {
+        gap: 50px;
+    }
+    .about__img-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+    .about__img {
+        margin-top: -80px;
+    }
+    .about__circle {
+        width: 320px;
+        height: 320px;
+    }
+    .about__text-cont span {
+        transform-origin: 0 160px;
+    }
+}
+
+@media (max-width: 750px) {
+    .about {
+        width: 90vw;
+    }
+    .about__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about__img-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    .about__img {
+        margin-top: -90px;
+    }
+    .about__circle {
+        width: 360px;
+        height: 360px;
+    }
+    .about__text-cont span {
+        transform-origin: 0 180px;
+    }
+    .about__stack {
+        margin: 0 auto;
+    }
+    .about__exp {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        width: 90vw;
+    }
+    .about__img-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+    .about__img {
+        margin-top: -70px;
+    }
+    .about__circle {
+        width: 300px;
+        height: 300px;
+    }
+    .about__text-cont span {
+        transform-origin: 0 150px;
+    }
+    .about__exp {
+        max-width: 320px;
     }
 }
