@@ -42,6 +42,7 @@ export const videoData: VideoData = [
                 title: "Дипломный проект ЯндексПрактикум",
                 date: "11/2022",
                 url: new URL(`../assets/videos/movies.mp4`, import.meta.url).href,
+                link: "https://github.com/MariaSpiiish/react-mesto-api-full",
                 id: "yandex"
         },
 ]
